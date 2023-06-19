@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body >
+<!-- Global Container -->
+<div class="bg-slate-100 flex justify-center h-screen items-center ">
+    <!-- Card Container -->
+    <div class="bg-white flex flex-col items-center rounded-2xl shadow-2xl p-6 space-y-10 
+    md:flex-row md:items-start md:px-8 md:space-x-10 md:space-y-0  md:p-16" >
+        <!-- Image -->
+        <div>
+            <img src="/assets/usama-akram-kP6knT7tjn4-unsplash.jpg" alt="Product" class=" w-60 rounded-xl  mx-auto hover:scale-105 duration-300" >
+        </div>
+        <!-- Content -->
+        <div class="flex flex-col space-y-6">
+            <!-- Label Title and Price Container -->
+            <div class="flex flex-col mb-4 space-y-3 text-center md:text-left">
+                <!-- Label -->
+                <div><div class="text-sm bg-black text-white rounded-full px-3 py-1 inline-block">Free shipping</div></div>
+                <!-- Title -->
+                <div class="font-medium text-2xl max-w-sm ">Nike Air Zoom</div>
+                <!-- Price -->
+                    <p class="line-through">$320</p>
+                    <p class="text-5xl font-bold">$280</p>
+                    <p class="text-sm font-light text-gray-400 ">The offer is valid until March 3 or as long as stock lasts!</p>
+                <!-- Button Container -->
+                <div class="group">
+                  <button class=" bg-blue-700 text-white w-full rounded-lg border-b-8 border-b-blue-700
+                                  group-hover:border-t-8 group-hover:border-b-0 group-hover:border-t-blue-700 
+                                  group-hover:shadow-lg">
+                    <div class="px-8 py-4 bg-blue-500 rounded-lg group-hover:bg-blue-700">Add to cart</div>
+                  </button>
+                </div>
+                <!-- Stock -->
+                <div class="group flex items-center space-x-3">
+                    <div class="w-3 h-3 bg-green-400 rounded-full group-hover:animate-ping"></div>
+                    <div class="text-sm ">100+ pcs. in stock</div>
+                </div>
+                <!-- Bottom Buttons Container -->
+                <div class="flex flex-col space-y-4  md:flex-row md:space-x-4 md:space-y-0">
+                    <!-- Button 1 -->
+                   <button class="border-2 border-gray-300 flex items-center justify-center space-x-3 py-3 px-5
+                                  rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 
+                                  transition-all duration-150">
+                       <img src="/assets/weight.png" class="w-8">
+                       <span class="text-sm">Add to cart</span> 
+                    </button>  
+                    <!-- Button 2 -->          
+                    <button class="border-2 border-gray-300 flex items-center justify-center space-x-3 py-3 px-5
+                                   rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 
+                                   transition-all duration-150">
+                        <img src="/assets/heart.png" class="w-8">
+                        <span class="text-sm">Add to wishlist</span> 
+                    </button>         
+                </div>  
+            </div>
+        </div> 
+    </div>
+</div>
+</body>
+</html>
